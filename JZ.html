@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>	img { display: block;margin-left: auto;margin-right: auto;}
+        table, th, td {border: 1px solid black;}
+	    #Head	{ font-size:40px; text-align: center;}
+	    #link_l	{font-size:15px;}
+	    #link_r { font-size:15px;}
+	    #text 	{font-size:15px; text-align: center;}
+	    #hidden	{ font-size:15px; text-align: center;}
+        .column {float: left;width: 33.33%;padding: 10px;height: 300px;}
+                    .row:after {content: "";display: table;clear: both;}
+        .button {background-color:rgb(0, 0, 0);border: none;
+                    color: rgb(255, 255, 255);
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 10px;
+                    margin: 4px 2px;
+                    cursor: pointer;}
+                    body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("https://unsplash.com/photos/uk3UEnEhTgw?fbclid=IwAR1IaPQkwNnOJ57zTvdtVvHPgBqUac1Ei7J1VGih2MpIXKlxhPZ1qIG-A18");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+<div class = "bg">
+	    <title> Profile : Jinny </title>
+	    <h1 id='Head'>  xxxx Jinny Saelee xxxx </h1>
+</head>
+
+
+    <body style="background-color:rgb(255, 255, 255);">
+        
+        <hr>
+                <a href="Demo.html" class="button" style="font-size: 16px;" >Homepage</a>
+                <a href="Demo.html" class="button" style="font-size: 16px;float: right;" >Next Page</a>
+    
+        <hr>
+        
+        <img src="https://zwebtech.herokuapp.com/JN.jpg" alt="Jinny's Picture" width="235" height="315">
+    
+       
+        <p style="text-align: center;" id="text">Full Name : Jinny Saelee
+            <br>You can call me : Jinny
+            <br>Date of Birth : 9 March 2001
+        </p>
+        
+        <p style="text-align:center; color:rgb(0, 0, 0);"><strong>Contact</strong></p> 
+        <table style="width:50%; background-color: rgb(201, 201, 201); margin-left: auto;margin-right: auto;">
+            <tr>    <th>Facebook</th>
+                    <th>Mails</th> 
+                    <th>Phone Number</th>
+            </tr>
+            <tr>    <td><a href="https://www.facebook.com/jinny.lee.50;"
+                    style="color: rgb(0, 0, 0); text-align: center;">Jinny Lee</a></td>
+                    <td><a href="mailto:saelee_j4@silpakorn.edu"
+                    style="color: rgb(0, 0, 0); text-align: center;"> Mails</a></td>
+                    <td style="color: rgb(0, 0, 0); text-align: center;">061-817-9888</td>
+            </tr>
+    
+        </table>
+        </p>
+    
+
+
+<p id="hidden"> We wanna told you something<br>
+    <button onclick="displayResult()">Click Me !!
+    </button>
+    <script>
+            function displayResult() {document.getElementById("hidden").innerHTML =
+            "We need A ^^";}
+    </script>
+</p>
+
+
+</body>
+</div>
+</html>
